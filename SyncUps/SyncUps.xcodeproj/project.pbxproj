@@ -12,6 +12,9 @@
 		5C7DBE612C356BDA00A5831E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C7DBE602C356BDA00A5831E /* Assets.xcassets */; };
 		5C7DBE642C356BDA00A5831E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C7DBE632C356BDA00A5831E /* Preview Assets.xcassets */; };
 		5C7DBE6C2C356C4E00A5831E /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 5C7DBE6B2C356C4E00A5831E /* ComposableArchitecture */; };
+		5CE827C62C4501CF008B5305 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE827C52C4501CF008B5305 /* Models.swift */; };
+		5CE827C92C450392008B5305 /* IdentifiedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE827C82C450392008B5305 /* IdentifiedCollections */; };
+		5CE827CB2C450434008B5305 /* SyncUpsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE827CA2C450434008B5305 /* SyncUpsList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,8 @@
 		5C7DBE5E2C356BD900A5831E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5C7DBE602C356BDA00A5831E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C7DBE632C356BDA00A5831E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5CE827C52C4501CF008B5305 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		5CE827CA2C450434008B5305 /* SyncUpsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncUpsList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +33,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C7DBE6C2C356C4E00A5831E /* ComposableArchitecture in Frameworks */,
+				5CE827C92C450392008B5305 /* IdentifiedCollections in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +63,8 @@
 				5C7DBE5E2C356BD900A5831E /* ContentView.swift */,
 				5C7DBE602C356BDA00A5831E /* Assets.xcassets */,
 				5C7DBE622C356BDA00A5831E /* Preview Content */,
+				5CE827C52C4501CF008B5305 /* Models.swift */,
+				5CE827CA2C450434008B5305 /* SyncUpsList.swift */,
 			);
 			path = SyncUps;
 			sourceTree = "<group>";
@@ -87,6 +95,7 @@
 			name = SyncUps;
 			packageProductDependencies = (
 				5C7DBE6B2C356C4E00A5831E /* ComposableArchitecture */,
+				5CE827C82C450392008B5305 /* IdentifiedCollections */,
 			);
 			productName = SyncUps;
 			productReference = 5C7DBE592C356BD900A5831E /* SyncUps.app */;
@@ -118,6 +127,7 @@
 			mainGroup = 5C7DBE502C356BD900A5831E;
 			packageReferences = (
 				5C7DBE6A2C356C4E00A5831E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				5CE827C72C450392008B5305 /* XCRemoteSwiftPackageReference "swift-identified-collections" */,
 			);
 			productRefGroup = 5C7DBE5A2C356BD900A5831E /* Products */;
 			projectDirPath = "";
@@ -145,6 +155,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CE827C62C4501CF008B5305 /* Models.swift in Sources */,
+				5CE827CB2C450434008B5305 /* SyncUpsList.swift in Sources */,
 				5C7DBE5F2C356BD900A5831E /* ContentView.swift in Sources */,
 				5C7DBE5D2C356BD900A5831E /* SyncUpsApp.swift in Sources */,
 			);
@@ -364,6 +376,14 @@
 				minimumVersion = 1.11.2;
 			};
 		};
+		5CE827C72C450392008B5305 /* XCRemoteSwiftPackageReference "swift-identified-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-identified-collections";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -371,6 +391,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5C7DBE6A2C356C4E00A5831E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
+		};
+		5CE827C82C450392008B5305 /* IdentifiedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CE827C72C450392008B5305 /* XCRemoteSwiftPackageReference "swift-identified-collections" */;
+			productName = IdentifiedCollections;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
